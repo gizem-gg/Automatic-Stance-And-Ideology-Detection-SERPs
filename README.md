@@ -9,3 +9,7 @@ the data or algorithm.
 1. We directly applied the proposed hierarchical deep learning architecture for stance detection to our problem.
 2. Then, we extended the presented approach by using BERT-based features instead of handcrafted features.
 3. Additionally, we also tried to incorporate "ideology information" of the documents to be able to label a given document with a stance as well as an ideology label. These two labels can be used in our stance and ideological bias analysis (Gezici et. al., 2021). 
+4. Since, we could not obtain satisfactoy results - probably because our dataset that was used for fine-tuning was not large enough. Thus, we also implemented some ideas to improve the results:
+
+a. Mixout - regularisation idea inspired by dropout
+b. LM Fine Tuning - finetuning the model on SERP domain first
